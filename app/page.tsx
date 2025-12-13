@@ -1,19 +1,19 @@
-import Header from "@/components/header";
 import Image from "next/image";
-import banner from "@/public/banner.png";
-import BookingItem from "@/components/booking-item";
 
 import { getBarbershops, getPopularBarbershops } from "@/data/barbershops";
 import { getUserBookings } from "@/data/bookings";
 import BarbershopItem from "@/components/barbershop-item";
+import BookingItem from "@/components/booking-item";
+import Header from "@/components/header";
+import QuickSearch from "@/components/quick-search";
 import {
   PageContainer,
   PageSectionContent,
   PageSectionScroller,
   PageSectionTitle,
 } from "@/components/ui/page";
-import Footer from "@/components/footer";
-import QuickSearch from "@/components/quick-search";
+import { getBarbershops, getPopularBarbershops } from "@/data/barbershops";
+import banner from "@/public/banner.png";
 
 export default async function Home() {
   const barbershops = await getBarbershops();

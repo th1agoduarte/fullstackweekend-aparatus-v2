@@ -7,7 +7,8 @@ import { PageSectionScroller } from "./ui/page";
 import { Scissors, Sparkles, User, Eye, Footprints, Waves } from "lucide-react";
 import { Input } from "./ui/input";
 import { Button } from "./ui/button";
-import { SearchIcon } from "lucide-react";
+import { Input } from "./ui/input";
+import { PageSectionScroller } from "./ui/page";
 
 const QuickSearch = () => {
   const router = useRouter();
