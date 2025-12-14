@@ -1,6 +1,12 @@
 "use client";
 
+import { CalendarDays, Home, LogIn,LogOut, MenuIcon } from "lucide-react";
 import Link from "next/link";
+import { toast } from "sonner";
+
+import { authClient } from "@/lib/auth-client";
+
+import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import { Button } from "./ui/button";
 import {
   Sheet,
@@ -10,12 +16,6 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "./ui/sheet";
-import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
-import { MenuIcon, Home, CalendarDays, LogOut, LogIn } from "lucide-react";
-import { authClient } from "@/lib/auth-client";
-import { toast } from "sonner";
-
-const isLoggedIn = false;
 
 const categories = [
   { label: "Cabelo", search: "cabelo" },

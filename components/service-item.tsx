@@ -1,9 +1,16 @@
 "use client";
 
+import { format } from "date-fns";
+import { ptBR } from "date-fns/locale";
 import Image from "next/image";
-import { Button } from "./ui/button";
+import { useMemo,useState } from "react";
+
+import { Barbershop,BarbershopService } from "@/generated/prisma/client";
 import { formatCurrency } from "@/lib/utils";
-import { BarbershopService, Barbershop } from "@/generated/prisma/client";
+
+import { Button } from "./ui/button";
+import { Calendar } from "./ui/calendar";
+import { Card, CardContent } from "./ui/card";
 import {
   Sheet,
   SheetContent,

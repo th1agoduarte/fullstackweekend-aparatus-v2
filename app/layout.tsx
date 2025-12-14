@@ -1,3 +1,5 @@
+import "./globals.css";
+
 import type { Metadata } from "next";
 import { Merriweather, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";

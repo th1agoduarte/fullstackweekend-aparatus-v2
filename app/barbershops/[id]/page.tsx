@@ -1,3 +1,4 @@
+import { Smartphone } from "lucide-react";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { Smartphone } from "lucide-react";
@@ -5,6 +6,9 @@ import { getBarbershopById } from "@/data/barbershops";
 import { PageSectionTitle } from "@/components/ui/page";
 import Footer from "@/components/footer";
 import ServiceItem from "@/components/service-item";
+import { PageSectionTitle } from "@/components/ui/page";
+import { getBarbershopById } from "@/data/barbershops";
+
 import BackButton from "./_components/back-button";
 import CopyButton from "./_components/copy-button";
 
